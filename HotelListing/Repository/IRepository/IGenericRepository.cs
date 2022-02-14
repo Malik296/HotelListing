@@ -11,7 +11,7 @@ namespace HotelListing.Repository.IRepository
             );
 
         Task<T> Get(
-            Expression<Func<T, bool>> expression = null,
+            Expression<Func<T, bool>> expression,
             List<string> includes = null
             );
 
